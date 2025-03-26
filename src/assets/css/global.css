@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/* ========== VARIABLES CSS (charte graphique Portfolio2025) ========== */
+:root {
+    /* 🎨 Couleurs */
+    --couleur-primaire: #3B82F6;     /* Bleu électrique */
+    --couleur-secondaire: #FACC15;   /* Jaune doré */
+    --texte-principal: #1F2937;      /* Noir doux */
+    --fond-clair: #F9FAFB;           /* Fond gris clair */
+    --fond-sombre: #111827;          /* Bleu nuit */
+    --lien-hover: #60A5FA;           /* Survol lien */
+    --alerte-erreur: #EF4444;
+
+
+
+    --couleur-primaire: #4F46E5; /* Indigo */
+    --couleur-secondaire: #22D3EE; /* Cyan clair */
+    --couleur-accent: #FACC15; /* Jaune doré pour les petits détails */
+
+
+        --couleur-principale: #0070f3;
+        --couleur-secondaire: #0051a3;
+        --texte-principal: #1a1a1a;
+        --texte-secondaire: #444;
+        --fond-clair: #f9f9f9;
+        --police-principale: 'Inter', sans-serif;
+   
+      
+  
+    /* Fond et texte */
+    --fond-clair: #F9FAFB;
+    --texte-principal: #1F2937; /* Gris très foncé */
+    --texte-secondaire: #6B7280; /* Gris moyen */
+  
+    /* Effets */
+    --ombre: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    --rayon-bordure: 10px;
+  
+    /* Tailles */
+    --max-width: 1200px;
+    --padding: 2rem;
+  
+    /* Police */
+    --police-principale: 'Poppins', sans-serif;
+  
+    /* 🔤 Typographie */
+    --police-principale: 'Poppins', 'Inter', sans-serif;
+  
+    /* 📏 Espacements & coins arrondis */
+    --rayon-petit: 6px;
+    --rayon-moyen: 12px;
+    --rayon-grand: 24px;
+  
+    --espace-xs: 0.5rem;
+    --espace-s: 1rem;
+    --espace-m: 2rem;
+    --espace-l: 4rem;
+    --espace-xl: 6rem;
+  
+    /* 📱 Tailles d’écran */
+    --ecran-petit: 576px;
+    --ecran-moyen: 768px;
+    --ecran-grand: 1024px;
+    --ecran-xl: 1280px;
+  }
+  
+ 
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 10px 10px 10px orange;
+    color: black;
+  }
+  body {
+    font-family: var(--police-principale);
+    background-color: var(--fond-clair);
+    color: var(--texte-principal);
+    line-height: 1.6;
+  }
+  
+  a {
+    color: var(--couleur-primaire);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--lien-hover);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  

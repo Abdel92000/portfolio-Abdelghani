@@ -1,0 +1,94 @@
+:root{
+  --couleur-primaire: #0070f3;
+--couleur-secondaire: #0051a3;
+--fond-clair: #f9f9f9;
+--texte-principal: #222;
+
+
+}
+
+.projectsSection {
+    padding: 60px 20px;
+    background-color: var(--fond-clair);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    color: black;
+    border: solid 1Px black;
+    padding: 10px 15PX;
+
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: var(--couleur-primaire);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: var(--couleur-secondaire);
+  }
+
+  .cta {
+    background-color: var(--couleur-principale);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block ;
+    margin: 30px auto;
+  }
+  
+  .cta:hover {
+    background-color: var(--couleur-secondaire);
+  }
+
+  .BtnVoirLeSite{
+    border: solid 1px black;
+    background-color: transparent;
+    padding: 10px 15px ;
+    font-weight: bold;
+    margin: 10px 0px;
+    cursor: pointer;
+  }

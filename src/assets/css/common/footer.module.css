@@ -1,0 +1,27 @@
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+  
+  .socials {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .socials a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+  }
+  
+  .socials a:hover {
+    border-bottom: solid 1px white;
+
+  }
+  
