@@ -12,12 +12,7 @@
   text-align: center;
   animation: fadeIn 1s ease-out forwards;
 }
-/* .content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-} */
 .avatar {
   width: 160px;
   height: 160px;
