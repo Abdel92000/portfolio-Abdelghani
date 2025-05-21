@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Header from './component/comon/header';
 import Home from './pages/home';
 import Footer from './component/comon/footer';
-// import Projects from './pages/Projects';
-// import Cv from './pages/Cv';
-// import Contact from './pages/Contact';
+
 
 const App: React.FC = () => {
   return (

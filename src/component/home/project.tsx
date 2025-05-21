@@ -1,32 +1,37 @@
+
+
 import React from 'react';
 import styles from '../../assets/css/home/projects.module.css';
-import imgFratellino from "../../assets/img/imgFratellino.png"
-import imgmeteo from "../../assets/img/imgmeteo.png"
-import Skills from './skills';
+import imgFratellino from "../../assets/img/imgFratellino.png";
+import imgmeteo from "../../assets/img/imgmeteo.png";
+
 const projects = [
   {
     title: 'Application météo moderne',
     description: 'Application React avec API météo, responsive et géolocalisation intégrée.',
     image: imgmeteo,
     link: 'https://abdel92000.github.io/Site-Meteo/',
-    isAvailable: true
+    isAvailable: true,
+    tech: ['React.js', 'API REST', 'CSS Modules'],
   },
   {
     title: 'Site e-commerce pour une pizzeria',
-    description: "Réalisation complète d’un site e-commerce moderne pour une pizzeria avec menu dynamique, système de prise de commande en ligne, gestion du panier, interface administrateur pour le suivi des commandes, et intégration d’un backend sécurisé. Projet conçu de A à Z avec React, TypeScript, Node.js et base de données.",
+    description: "Site complet avec commande en ligne, back-office et base de données. Stack : React, Node, TypeScript, MySQL.",
     image: imgFratellino,
     link: '#',
-    isAvailable: false
+    isAvailable: false,
+    tech: ['React.js', 'Node.js', 'TypeScript', 'MySQL'],
+  },
+  {
+    title: 'Site vitrine Sservices',
+    description: "Site vitrine professionnel pour un service de serrurerie. Responsive, clair, rapide, avec formulaire de contact, animations légères et navigation fluide.",
+    image: require('../../assets/img/Capture d’écran 2025-05-21 à 13.49.28.png'), 
+    link: 'https://sservices-two.vercel.app/',
+    isAvailable: true,
+    tech: ['React.js', 'CSS', 'Responsive Design','TypeScript'],
   }
 ];
 
-
-const scrollToProjects = () => {
-  const section = document.getElementById('skills');
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  }
-};
 const Projects = () => {
   return (
     <section id="projects" className={styles.projectsSection}>
@@ -38,20 +43,24 @@ const Projects = () => {
             <div className={styles.content}>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
+              <div className={styles.techStack}>
+                {project.tech.map((tech, i) => (
+                  <span key={i} className={styles.tech}>{tech}</span>
+                ))}
+              </div>
               {project.isAvailable ? (
-  <a href={project.link} target="_blank" rel="noopener noreferrer">
-    <button className={styles.BtnVoirLeSite}>Voir le site</button>
-  </a>
-) : (
-  <button className={styles.BtnVoirLeSite} disabled style={{ cursor: 'not-allowed', opacity: 0.9 }}>
-    Pas encore disponible
-  </button>
-)}            </div>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <button className={styles.BtnVoirLeSite}>Voir le site</button>
+                </a>
+              ) : (
+                <button className={styles.BtnVoirLeSite} disabled>
+                  Pas encore disponible
+                </button>
+              )}
+            </div>
           </div>
         ))}
       </div>
-
-     <Skills />
     </section>
   );
 };

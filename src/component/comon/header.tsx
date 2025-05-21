@@ -1,44 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from '../../assets/css/common/header.module.css'
-
 const Header = () =>{
-  const scrollToProjects = () => {
-    const section = document.getElementById('projects');
+
+   const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const scrollTo = (id: string) => {
+    const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false); 
     }
   };
-
-  const scrollToFooter = () => {
-    const section = document.getElementById('footer');
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  
-  const scrollToPresentation= () => {
-    const section = document.getElementById('presentation');
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
+ 
 
   return <>
 
   <nav className={styles.nav}>
     <div className={styles.logo}>
-      <p>Rahal Abdelghani</p>
+   
     </div>
 
-    <div className={styles.link}>
+
+      <div className={styles.burger} onClick={toggleMenu}>
+        <div className={styles.bar}></div>
+        <div className={styles.bar}></div>
+        <div className={styles.bar}></div>
+      </div>
+
+    <div className={`${styles.link} ${isOpen ? styles.active : ''}`}>
       <ul>
-        <li onClick={scrollToPresentation}>Accueil</li>
-        <li onClick={scrollToProjects}>Mes projects</li>
-        <li>Mes skills</li>
-        <li onClick={scrollToFooter}>Contact</li>
+        
+          <li onClick={() => scrollTo('presentation')}>Accueil</li>
+          <li onClick={() => scrollTo('projects')}>Mes projects</li>
+          <li onClick={() => scrollTo('skills')}>Mes skills</li>
+          <li onClick={() => scrollTo('footer')}>Contact</li>
+
       </ul>
     </div>
 

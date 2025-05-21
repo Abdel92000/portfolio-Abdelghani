@@ -4,22 +4,20 @@
     box-sizing: 0;
 }
 
-/* ========== VARIABLES CSS (charte graphique Portfolio2025) ========== */
 :root {
-    /* 🎨 Couleurs */
-    --couleur-primaire: #3B82F6;     /* Bleu électrique */
-    --couleur-secondaire: #FACC15;   /* Jaune doré */
-    --texte-principal: #1F2937;      /* Noir doux */
-    --fond-clair: #F9FAFB;           /* Fond gris clair */
-    --fond-sombre: #111827;          /* Bleu nuit */
-    --lien-hover: #60A5FA;           /* Survol lien */
+    --couleur-primaire: #3B82F6;    
+    --couleur-secondaire: #FACC15;  
+    --texte-principal: #1F2937;  
+    --fond-clair: #F9FAFB;           
+    --fond-sombre: #111827;     
+    --lien-hover: #60A5FA;          
     --alerte-erreur: #EF4444;
 
 
 
-    --couleur-primaire: #4F46E5; /* Indigo */
-    --couleur-secondaire: #22D3EE; /* Cyan clair */
-    --couleur-accent: #FACC15; /* Jaune doré pour les petits détails */
+    --couleur-primaire: #4F46E5; 
+    --couleur-secondaire: #22D3EE; 
+    --couleur-accent: #FACC15;
 
 
         --couleur-principale: #0070f3;
@@ -31,26 +29,19 @@
    
       
   
-    /* Fond et texte */
     --fond-clair: #F9FAFB;
-    --texte-principal: #1F2937; /* Gris très foncé */
-    --texte-secondaire: #6B7280; /* Gris moyen */
-  
-    /* Effets */
+    --texte-principal: #1F2937; 
+    --texte-secondaire: #6B7280; 
     --ombre: 0px 4px 30px rgba(0, 0, 0, 0.1);
     --rayon-bordure: 10px;
   
-    /* Tailles */
     --max-width: 1200px;
     --padding: 2rem;
   
-    /* Police */
     --police-principale: 'Poppins', sans-serif;
   
-    /* 🔤 Typographie */
     --police-principale: 'Poppins', 'Inter', sans-serif;
   
-    /* 📏 Espacements & coins arrondis */
     --rayon-petit: 6px;
     --rayon-moyen: 12px;
     --rayon-grand: 24px;
@@ -61,7 +52,6 @@
     --espace-l: 4rem;
     --espace-xl: 6rem;
   
-    /* 📱 Tailles d’écran */
     --ecran-petit: 576px;
     --ecran-moyen: 768px;
     --ecran-grand: 1024px;
@@ -77,7 +67,8 @@
   }
   body {
     font-family: var(--police-principale);
-    background-color: var(--fond-clair);
+    /* background-color: var(--fond-clair); */
+    background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
     color: var(--texte-principal);
     line-height: 1.6;
   }
@@ -108,4 +99,12 @@
     max-width: 100%;
     display: block;
   }
+  
+
+   @media screen and (max-width: 768px){
+section {
+  scroll-margin-top: 250px;
+}
+   }
+
   

@@ -1,25 +1,42 @@
 import React from 'react';
-import styles from '../../assets/css/home/skills.module.css';
-import imgAbdel from '../../assets/img/imgAbdelghani.jpg';
+import styles from '../../assets/css/home/Skills.module.css';
 
 const Skills = () => {
- 
-
   return (
-    <>
-  <section className={styles.skillsSection} id='skills'>
-<ul >
-  <li>🟦 React.js</li>
-  <li>🟨 TypeScript</li>
-  <li>🌐 HTML/CSS/JavaScript</li>
-  <li>🛠️ Node.js, Express</li>
-  <li>🗃️ MySQL, MongoDB</li>
-</ul>
+    <section id="skills" className={styles.skillsSection}>
+      <h2 className={styles.title}>Mes compétences</h2>
 
-  </section>
-  
-    </>
-    
+      <div className={styles.grid}>
+        <div className={styles.category}>
+          <h3>Frontend</h3>
+          <ul>
+            <li>React.js</li>
+            <li>TypeScript</li>
+            <li>HTML / CSS / Sass</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div className={styles.category}>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+
+        <div className={styles.category}>
+          <h3>Outils</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Figma</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   );
 };
 
