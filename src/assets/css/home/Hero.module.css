@@ -12,7 +12,12 @@
   text-align: center;
   animation: fadeIn 1s ease-out forwards;
 }
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 .avatar {
   width: 160px;
   height: 160px;
@@ -96,6 +101,6 @@ button.secondary:hover {
   .avatar {
     width: 120px;
     height: 120px;
-    justify-self: center;
+    justify-self: ce;
   }
 }
