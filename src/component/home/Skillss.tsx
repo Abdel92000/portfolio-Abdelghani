@@ -1,4 +1,4 @@
-import styles from '../../assets/css/home/Skills.module.css'
+import styles from '../../assets/css/home/Skillss.module.css'
 
 const Skills = () => {
   return (
