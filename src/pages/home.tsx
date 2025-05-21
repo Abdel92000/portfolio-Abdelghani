@@ -1,7 +1,7 @@
 import Projects from '../component/home/project'
 import Hero from '../component/home/Hero'
 import Contact from '../component/home/Contact'
-import Skills from '../component/home/skills'
+import Skills from '../component/home/Skillss'
 const Home = () =>{
 
   return <>
