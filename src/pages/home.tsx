@@ -1,5 +1,3 @@
-import React from 'react'
-import Presentation from '../component/home/presentation'
 import Projects from '../component/home/project'
 import Hero from '../component/home/Hero'
 import Skills from '../component/home/Skills'
