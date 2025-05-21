@@ -19,7 +19,11 @@ const Hero = () => {
         <div className={styles.content}>
           <img src={imgAbdel} alt="Rahal Abdelghani" className={styles.avatar} />
           <h1>Salut, je suis <span>Rahal Abdelghani</span></h1>
-          <p>Développeur web et mobile, passionné par la création d’interfaces modernes et performantes.</p>
+        
+<p>
+Développeur web freelance basé à Paris. Je crée des sites internet modernes et des applications performantes.
+</p>
+
           <div className={styles.buttons}>
             <button onClick={scrollToProjects}>Voir mes projets</button>
             <button onClick={scrollToContact} className={styles.secondary}>Me contacter</button>
