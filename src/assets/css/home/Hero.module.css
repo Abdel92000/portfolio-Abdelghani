@@ -13,7 +13,7 @@
   animation: fadeIn 1s ease-out forwards;
 }
 
-.avatar {
+/* .avatar {
   width: 160px;
   height: 160px;
   object-fit: cover;
@@ -22,6 +22,17 @@
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
   margin-bottom: 30px;
   justify-self: center;
+} */
+ 
+.avatar {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  display: block;
+  margin: 0 auto 30px;
 }
 
 h1 {
@@ -93,9 +104,16 @@ button.secondary:hover {
     font-size: 1rem;
   }
 
+  /* .avatar {
+    width: 120px;
+    height: 120px;
+    
+  } */
+
   .avatar {
     width: 120px;
     height: 120px;
-    justify-self: ce;
+    display: block;
+    margin: 0 auto 20px;
   }
 }
