@@ -38,7 +38,7 @@ const Contact = () => {
 });
 
   } catch (error) {
-    console.error("Erreur EmailJS ❌ :", error);
+    console.error("Ereur EmailJS ❌ :", error);
   }
 };
 
