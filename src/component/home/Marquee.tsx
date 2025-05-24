@@ -9,7 +9,8 @@ const Marquee = () => {
         animate={{ x: ["100%", "-100%"] }}
         transition={{
           repeat: Infinity,
-          duration: 15,
+        //   duration: 15,
+           duration: 6,
           ease: "linear",
         }}
       >
