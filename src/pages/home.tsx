@@ -3,7 +3,7 @@ import Hero from '../component/home/Hero'
 import Contact from '../component/home/Contact'
 import Skills from '../component/home/Skillss'
 import { Helmet } from 'react-helmet';
-
+import Faq from '../component/home/Faq';
 const Home = () =>{
 
   return <>
@@ -27,13 +27,145 @@ const Home = () =>{
   />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.abdelghani-dev.fr/" />
-  <meta property="og:image" content="https://www.abdelghani-dev.fr/logo512.png" />
+  <meta property="og:image" content="https://www.abdelghani-dev.fr/imgdeveloppeur.jpg" />
+  <link rel="canonical" href="https://www.abdelghani-dev.fr/" />
+
+ <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelles technologies utilises-tu pour développer un site web ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "J’utilise React, TypeScript, Node.js, MongoDB, GitHub Actions, CI/CD..."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Est-ce que tu es disponible pour une alternance à Paris ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, je suis dispo dès septembre 2025 pour une alternance dans le cadre de ma formation CDA DevOps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Proposes-tu des sites pour des freelances ou des PME ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, je conçois des sites modernes et optimisés pour freelances, PME ou artisans."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment te contacter pour un projet web ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vous pouvez me contacter via le formulaire du site ou par email à abdelghani.rahal123@gmail.com."
+          }
+        }
+      ]
+    }
+    `}
+  </script>
+
+ <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Rahal Abdelghani",
+              "jobTitle": "Développeur Web Fullstack",
+              "url": "https://www.abdelghani-dev.fr/",
+              "image": "https://www.abdelghani-dev.fr/imgdeveloppeur.jpg",
+              "sameAs": [
+                "https://www.linkedin.com/in/abdelghani-dev",
+                "https://github.com/Abdel92000"
+              ],
+              "description": "Développeur web fullstack à Paris, spécialisé en React, Node.js, TypeScript, UX/UI. Disponible pour une alternance dès septembre 2025 dans le cadre d'une formation CDA DevOps.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Paris",
+                "addressCountry": "FR"
+              },
+              "knowsAbout": [
+                "React",
+                "Node.js",
+                "TypeScript",
+                "MongoDB",
+                "MySQL",
+                "CI/CD",
+                "UX/UI",
+                "Docker",
+                "Next.js"
+              ]
+            }
+          `}
+        </script>
+
+   <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Rahal Abdelghani – Développeur Web Fullstack",
+        "url": "https://www.abdelghani-dev.fr",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.abdelghani-dev.fr/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    `}
+  </script>
 </Helmet>
 
   <Hero/>
   <Projects/>
   <Skills/>
   <Contact/>
+
+ <Faq/>
+
+ <script type="application/ld+json">
+  {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rahal Abdelghani",
+      "jobTitle": "Développeur Web Fullstack",
+      "url": "https://www.abdelghani-dev.fr/",
+      "image": "https://www.abdelghani-dev.fr/imgdeveloppeur.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/abdelghani-dev",
+        "https://github.com/Abdel92000"
+      ],
+      "description": "Développeur web fullstack à Paris, spécialisé en React, Node.js, TypeScript, UX/UI. Disponible pour une alternance dès septembre 2025 dans le cadre d'une formation CDA DevOps.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paris",
+        "addressCountry": "FR"
+      },
+      "knowsAbout": [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "MongoDB",
+        "MySQL",
+        "CI/CD",
+        "UX/UI",
+        "Docker",
+        "Next.js"
+      ]
+    }
+  `}
+</script>
+
+
   </>
 }
 

@@ -1,0 +1,54 @@
+.mentions {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  line-height: 1.7;
+}
+
+.mentions h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #111;
+  font-weight: 700;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.mentions h2 {
+  font-size: 1.3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  position: relative;
+  font-weight: bold;
+}
+
+.mentions h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #f59e0b;
+  margin-top: 5px;
+  border-radius: 6px;
+}
+
+.mentions p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.mentions a {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+.mentions a:hover {
+  text-decoration: none;
+  color: #0056c1;
+}

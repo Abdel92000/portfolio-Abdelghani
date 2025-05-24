@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Header from './component/comon/header';
 import Home from './pages/home';
 import Footer from './component/comon/footer';
+import MentionsLegales from './pages/Mention';
 
 
 const App: React.FC = () => {
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/mentions-legales" element={<MentionsLegales />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />

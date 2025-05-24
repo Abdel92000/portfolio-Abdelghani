@@ -2,14 +2,14 @@
 
 import React from 'react';
 import styles from '../../assets/css/home/projects.module.css';
-import imgFratellino from "../../assets/img/imgFratellino.png";
-import imgmeteo from "../../assets/img/imgmeteo.png";
+import imgPizzeria from "../../assets/img/site-pizzeria-react-node.png";
+import imgMeteo from "../../assets/img/app-meteo-react-geoloc.png";
 
 const projects = [
   {
     title: 'Application météo moderne',
     description: 'Application React avec API météo, responsive et géolocalisation intégrée.',
-    image: imgmeteo,
+    image: imgMeteo,
     link: 'https://abdel92000.github.io/Site-Meteo/',
     isAvailable: true,
     tech: ['React.js', 'API REST', 'CSS Modules'],
@@ -17,7 +17,7 @@ const projects = [
   {
     title: 'Site e-commerce pour une pizzeria',
     description: "Site complet avec commande en ligne, back-office et base de données. Stack : React, Node, TypeScript, MySQL.",
-    image: imgFratellino,
+    image: imgPizzeria,
     link: '#',
     isAvailable: false,
     tech: ['React.js', 'Node.js', 'TypeScript', 'MySQL'],
@@ -25,7 +25,7 @@ const projects = [
   {
     title: 'Site vitrine Sservices',
     description: "Site vitrine professionnel pour un service de serrurerie. Responsive, clair, rapide, avec formulaire de contact, animations légères et navigation fluide.",
-    image: require('../../assets/img/Capture d’écran 2025-05-21 à 13.49.28.png'), 
+    image: require('../../assets/img/site-serrurier-responsive.png'), 
     link: 'https://sservices-two.vercel.app/',
     isAvailable: true,
     tech: ['React.js', 'CSS', 'Responsive Design','TypeScript'],
