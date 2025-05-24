@@ -1,0 +1,17 @@
+.wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #111827;
+  border-top: 2px solid white;
+  /* border-bottom: 2px solid #facc15; */
+  border-bottom: 2px solid  white;
+  padding: 0.5rem 0;
+}
+
+.track {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  white-space: nowrap;
+}

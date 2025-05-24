@@ -4,6 +4,7 @@ import Contact from '../component/home/Contact'
 import Skills from '../component/home/Skillss'
 import { Helmet } from 'react-helmet';
 import Faq from '../component/home/Faq';
+import Marquee from '../component/home/Marquee';
 const Home = () =>{
 
   return <>
@@ -123,48 +124,12 @@ const Home = () =>{
     `}
   </script>
 </Helmet>
-
+<Marquee/>
   <Hero/>
   <Projects/>
   <Skills/>
   <Contact/>
-
- <Faq/>
-
- <script type="application/ld+json">
-  {`
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Rahal Abdelghani",
-      "jobTitle": "Développeur Web Fullstack",
-      "url": "https://www.abdelghani-dev.fr/",
-      "image": "https://www.abdelghani-dev.fr/imgdeveloppeur.jpg",
-      "sameAs": [
-        "https://www.linkedin.com/in/abdelghani-dev",
-        "https://github.com/Abdel92000"
-      ],
-      "description": "Développeur web fullstack à Paris, spécialisé en React, Node.js, TypeScript, UX/UI. Disponible pour une alternance dès septembre 2025 dans le cadre d'une formation CDA DevOps.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Paris",
-        "addressCountry": "FR"
-      },
-      "knowsAbout": [
-        "React",
-        "Node.js",
-        "TypeScript",
-        "MongoDB",
-        "MySQL",
-        "CI/CD",
-        "UX/UI",
-        "Docker",
-        "Next.js"
-      ]
-    }
-  `}
-</script>
-
+  <Faq/>
 
   </>
 }
