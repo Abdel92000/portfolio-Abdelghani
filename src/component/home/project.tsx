@@ -7,12 +7,12 @@ import imgMeteo from "../../assets/img/app-meteo-react-geoloc.png";
 
 const projects = [
   {
-    title: 'Application météo moderne',
-    description: 'Application React avec API météo, responsive et géolocalisation intégrée.',
-    image: imgMeteo,
-    link: 'https://abdel92000.github.io/Site-Meteo/',
+    title: 'Site vitrine Sservices',
+    description: "Site vitrine professionnel pour un service de serrurerie. Responsive, clair, rapide, avec formulaire de contact, animations légères et navigation fluide.",
+    image: require('../../assets/img/site-serrurier-responsive.png'), 
+    link: 'https://sservices-two.vercel.app/',
     isAvailable: true,
-    tech: ['React.js', 'API REST', 'CSS Modules'],
+    tech: ['React.js', 'CSS', 'Responsive Design','TypeScript'],
   },
   {
     title: 'Site e-commerce pour une pizzeria',
@@ -23,13 +23,14 @@ const projects = [
     tech: ['React.js', 'Node.js', 'TypeScript', 'MySQL'],
   },
   {
-    title: 'Site vitrine Sservices',
-    description: "Site vitrine professionnel pour un service de serrurerie. Responsive, clair, rapide, avec formulaire de contact, animations légères et navigation fluide.",
-    image: require('../../assets/img/site-serrurier-responsive.png'), 
-    link: 'https://sservices-two.vercel.app/',
+    title: 'Application météo moderne',
+    description: 'Application React avec API météo, responsive et géolocalisation intégrée.',
+    image: imgMeteo,
+    link: 'https://abdel92000.github.io/Site-Meteo/',
     isAvailable: true,
-    tech: ['React.js', 'CSS', 'Responsive Design','TypeScript'],
-  }
+    tech: ['React.js', 'API REST', 'CSS Modules'],
+  },
+  
 ];
 
 const Projects = () => {

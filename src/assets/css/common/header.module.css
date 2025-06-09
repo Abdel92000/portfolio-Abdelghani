@@ -75,6 +75,13 @@ backdrop-filter: blur(6px);
   border-radius: 2px;
 }
 
+.logoImg {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+
 @media screen and (max-width: 768px) {
   .burger {
     display: flex;
