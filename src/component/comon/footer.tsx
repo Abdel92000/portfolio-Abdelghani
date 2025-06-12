@@ -9,6 +9,7 @@ const Footer = () => {
       <p>&copy; {new Date().getFullYear()} Rahal Abdelghani. Tous droits réservés.</p>
       <div className={styles.socials}>
         <a href="https://www.linkedin.com/in/abdelghani-rahal/" target="_blank" rel="noopener noreferrer">  <FontAwesomeIcon icon={faLinkedin} style={{height:"30px"}}/></a>
+        <a>Abdelghani.rahal123@gmail.com</a>
         <a href="/mentions-legales" target="_blank" rel="noopener noreferrer">Mentions légales</a>
 
       </div>
