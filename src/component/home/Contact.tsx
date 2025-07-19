@@ -7,6 +7,11 @@ import confetti from 'canvas-confetti';
 confetti(); 
 
 const Contact = () => {
+  // console.log("ENV:", process.env);
+  console.log("Service ID:", process.env.REACT_APP_EMAILJS_SERVICE_ID);
+
+
+
   const form = useRef<HTMLFormElement>(null);
   const [success, setSuccess] = useState(false);
 
@@ -15,12 +20,21 @@ const Contact = () => {
   if (!form.current) return;
 
   try {
+//     await emailjs.sendForm(
+//   import.meta.env.VITE_EMAILJS_SERVICE_ID,
+//   import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+//   form.current,
+//   import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+// );
+
     await emailjs.sendForm(
-  import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
   form.current,
-  import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+ process.env.REACT_APP_EMAILJS_PUBLIC_KEY
 );
+
+
 
 
     setSuccess(true); 
