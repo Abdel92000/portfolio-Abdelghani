@@ -46,7 +46,7 @@ process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
 });
 
   } catch (error) {
-    console.error("Ereur EmailJS ❌ :", error);
+    console.error("Ereur EmailJS ❌:" + `${process.env.REACT_APP_EMAILJS_PUBLIC_KEY}`, error);
   }
 };
 
