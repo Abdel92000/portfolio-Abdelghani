@@ -4,7 +4,6 @@ import Contact from '../component/home/Contact'
 import Skills from '../component/home/Skillss'
 import { Helmet } from 'react-helmet';
 import Faq from '../component/home/Faq';
-import Marquee from '../component/home/Marquee';
 const Home = () =>{
 
   return <>
@@ -124,7 +123,6 @@ const Home = () =>{
     `}
   </script>
 </Helmet>
-<Marquee/>
   <Hero/>
   <Projects/>
   <Skills/>
