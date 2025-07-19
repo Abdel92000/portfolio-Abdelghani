@@ -41,7 +41,7 @@ process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
 });
 
   } catch (error) {
-    console.log('error')
+    console.log('erro')
   }
 };
 
