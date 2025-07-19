@@ -25,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "preview": "serve -s dist --single"
+    "preview": "serve -s dist --single",
+    "dev": "vite"
   },
   "eslintConfig": {
     "extends": [
