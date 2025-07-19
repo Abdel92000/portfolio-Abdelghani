@@ -61,7 +61,7 @@ process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
         <textarea name="title" placeholder="Votre message" rows={5} required />
         <button type="submit">Envoyer</button>
 
-        {success && <p className={styles.confirmation}>✅ Merci, votre message a été envoyé !</p>}
+        {success && <p className={styles.confirmation}>Merci, votre message a été envoyé !</p>}
       </form>
     </section>
   );
