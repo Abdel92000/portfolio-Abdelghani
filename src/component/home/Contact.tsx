@@ -7,11 +7,6 @@ import confetti from 'canvas-confetti';
 confetti(); 
 
 const Contact = () => {
-  // console.log("ENV:", process.env);
-  console.log("Service ID:", process.env.REACT_APP_EMAILJS_SERVICE_ID);
-
-
-
   const form = useRef<HTMLFormElement>(null);
   const [success, setSuccess] = useState(false);
 
@@ -46,7 +41,7 @@ process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
 });
 
   } catch (error) {
-    console.error("Ereur EmailJS ❌:" + `${process.env.REACT_APP_EMAILJS_PUBLIC_KEY}`, error);
+    console.log('error')
   }
 };
 
