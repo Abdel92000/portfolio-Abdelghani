@@ -33,7 +33,7 @@ const Header = () =>{
       <ul>
         
           <li onClick={() => scrollTo('presentation')}>Accueil</li>
-          <li onClick={() => scrollTo('projects')}>Mes projets</li>
+          <li onClick={() => scrollTo('projects')}>Mes projeéézots</li>
           <li onClick={() => scrollTo('skills')}>Mes skills</li>
           <li onClick={() => scrollTo('footer')}>Contact</li>
           <li onClick={() => scrollTo('FAQ')}>FAQ</li>
