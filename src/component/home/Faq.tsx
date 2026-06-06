@@ -6,10 +6,6 @@ const questions = [
     answer: "React, TypeScript, Node.js, MongoDB, Docker, CI/CD, GitHub Actions.",
   },
   {
-    question: "Es-tu disponible pour une alternance ?",
-    answer: "Oui, dès septembre 2025 à Paris. Je suis en formation CDA (DevOps).",
-  },
-  {
     question: "Proposes-tu des sites pour PME/freelances ?",
     answer: "Oui. Sites modernes, performants et adaptés à leurs besoins.",
   },
